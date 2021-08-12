@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/04cbc1650a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/login.css">
-    <script src="login.js" defer></script>
     <title>Sign in page</title>
 </head>
 
@@ -16,24 +16,27 @@
         <h1 class="heading1">Register or login</h1>
     </div>
     <div id="inputs">
-        <div class="login-section">
+        <form action="" class="login-section">
             <h2>Login</h2>
             <p>Login with your email and password.</p>
             <div class="login">
                 <div class="email-login">
-                    <input class="login-input" type="email" name="email" placeholder="email" required />
+                    <input class="login-input" type="email" name="email" id="email" placeholder="email" required />
                 </div>
                 <div class="password-login">
-                    <input class="login-input" type="password" name="password" placeholder="password" required />
+                    <input class="login-input" type="password" id="password" name="password" placeholder="password"
+                        required />
                 </div>
-                <button class="log-btn">Login</button>
+                <a href="products.html">
+                    <button class="log-btn">Login <i class="fas fa-check"></i></button>
+                </a>
             </div>
-        </div>
-        <div class="line"></div>
+        </form>
+        <div class="line">.</div>
         <div class="register-section">
             <h2>Register</h2>
             <p>Register if you don't have an account.</p>
-            <div class="registeration">
+            <form onsubmit="sign_in()" class="registeration">
                 <div class="name-reg">
                     <input class="login-input" type="name" name="name" placeholder="name" required />
                 </div>
@@ -46,10 +49,12 @@
                 <div>
                     <input class="login-input" type="password" name="password" placeholder="password" required />
                 </div>
-                <button class="log-btn">Register</button>
-            </div>
+                <button class="log-btn">Register <i class="fas fa-user-plus"></i></button>
+            </form>
         </div>
     </div>
+    <script src="../Javascript_EOMP/login.js">
+    </script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@ function sign_in(email, password) {
     console.log(email);
     console.log(password);
 
-fetch("https://arcane-mountain-40701.herokuapp.com/user-registration", {
+fetch("https://arcane-mountain-40701.herokuapp.com/protected", {
     method: "POST",
     body: JSON.stringify({
         email: `${email}`,
