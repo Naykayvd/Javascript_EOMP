@@ -11,8 +11,28 @@
 
 <body>
     <h1>Edit and add Products</h1>
-    <p>add products <i class="fas fa-plus"></i></p>
-    <div></div>
+    <div class="add">
+        <h2>Add new products <i class="fas fa-plus"></i></h2>
+        <input type="text" name="product" placeholder="product name">
+        <p>price</p>
+        <input type="number" name="price">
+        <button>Add Product<i class="fas fa-cart-plus"></i></button>
+    </div>
+    <div class="remove">
+        <h2>Remove Products</h2>
+        <p>Product ID</p>
+        <input type="number" name="id">
+        <button>Remove product<i class="fas fa-trash"></i></button>
+    </div>
+    <div>
+        <h2>Edit Products</h2>
+        <p>Product ID</p>
+        <input type="number" name="id">
+        <input type="text" name="product" placeholder="product name">
+        <p>price</p>
+        <input type="number" name="price">
+        <button>Edit product<i class="fas fa-pen"></i></button>
+    </div>
 </body>
 
 </html>

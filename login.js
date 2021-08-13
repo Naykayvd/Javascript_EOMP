@@ -6,7 +6,7 @@ function sign_in(email, password) {
     console.log(email)
     console.log(password)
 
-fetch("http://127.0.0.1:5000/auth", {
+fetch("https://arcane-mountain-40701.herokuapp.com/auth", {
     method: "POST",
     mode: "cors",
     body: JSON.stringify({
@@ -20,22 +20,14 @@ fetch("http://127.0.0.1:5000/auth", {
   .then((response) => response.json(
       console.log(response)
   ))
-//   .then((data) => {
-//       if (data["access_token"]) {
-//           console.log(data);
-//           myStorage = window.localStorage;
-//           myStorage.setItem("jwt-token", data["access_token"]);
-//           myStorage.setItem("email", email);
-//           myStorage.setItem("password", password);
-//           window.location.href = "/products.html";
-//       }
-//   });
+   .then((data) => {
+       if (data["access_token"]) {
+            console.log(data);
+           myStorage = window.localStorage;
+           myStorage.setItem("jwt-token", data["access_token"]);
+           myStorage.setItem("email", email);
+           myStorage.setItem("password", password);
+           window.location.href = "/products.html";
+       }
+   });
 }
-
-// register function
-
-// function register(name, surname, email, password) {
-//     console.log(name);
-//     console.log(surname);
-//     method
-// }
