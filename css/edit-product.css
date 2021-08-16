@@ -99,3 +99,18 @@ p, h2 {
     transition: ease-in-out 0.3s;
     cursor: pointer;
 }
+
+.back_btn {
+    margin-left: 650px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+.back_btn:hover {
+    transition: ease-in-out 0.2s;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 3rem;    
+}

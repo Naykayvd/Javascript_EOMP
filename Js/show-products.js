@@ -1,4 +1,4 @@
-fetch("http://127.0.0.1:5000/products-page/")
+fetch("https://immense-mountain-59630.herokuapp.com/products-page/")
 .then((request) => {
     // console.log(request.json())
     request.json().then((obj) => {

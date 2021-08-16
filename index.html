@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/04cbc1650a.js" crossorigin="anonymous"></script>
-    <script src="login.js"></script>
     <link rel="stylesheet" href="css/login.css">
     <title>Sign in page</title>
 </head>
@@ -17,7 +16,7 @@
         <h1 class="heading1">Register or login</h1>
     </div>
     <div id="inputs">
-        <form onsubmit="event.preventDefault()" method="POST" class="login-section">
+        <form class="login-section">
             <h2>Login</h2>
             <p>Login with your email and password.</p>
             <div class="login">
@@ -29,7 +28,7 @@
                         required />
                 </div>
                 <a href="products.html">
-                    <button onclick="sign_in()" class="log-btn">Login <i class="fas fa-check"></i></button>
+                    <button type="submit" class="log-btn">Login <i class="fas fa-check"></i></button>
                 </a>
             </div>
         </form>
@@ -37,23 +36,26 @@
         <div class="register-section">
             <h2>Register</h2>
             <p>Register if you don't have an account.</p>
-            <form onsubmit="sign_in()" class="registeration">
+            <form class="registeration">
                 <div class="name-reg">
-                    <input class="login-input" type="name" name="name" placeholder="name" required />
+                    <input id="name" class="login-input" type="name" name="name" placeholder="name" required />
                 </div>
                 <div class="surname-reg">
-                    <input class="login-input" type="name" name="name" placeholder="surname" required />
+                    <input id="surname" class="login-input" type="name" name="name" placeholder="surname" required />
                 </div>
                 <div class="email-reg">
-                    <input class="login-input" type="email" name="email" placeholder="email" required />
+                    <input id="email2" class="login-input" type="email" name="email" placeholder="email" required />
                 </div>
                 <div>
-                    <input class="login-input" type="password" name="password" placeholder="password" required />
+                    <input id="password2" class="login-input" type="password" name="password" placeholder="password"
+                        required />
                 </div>
                 <button class="log-btn">Register <i class="fas fa-user-plus"></i></button>
             </form>
         </div>
     </div>
+    <script src="Js/create-user.js"></script>
+    <script src="Js/login.js"></script>
 </body>
 
 </html>
