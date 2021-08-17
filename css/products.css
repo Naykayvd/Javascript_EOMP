@@ -4,31 +4,11 @@
     box-sizing: border-box;
 }
 
-.item-img {
-    height: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.item-box1{
+.item-containers{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 50px;
-}
-
-.item-box2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 50px;
-}
-
-.line {
-    width: 5px;
-    height: 300px;
-    background-color: #000000;
-    border-radius: 20px;
 }
 
 .item {
@@ -95,7 +75,7 @@ h2{
     margin-left: 160px;
 }
 
-.edit-cart {
+.edit-page {
     background: none;
     border: none;
     font-size: 2rem;
@@ -107,7 +87,13 @@ h2{
     font-size: 2rem;
 }
 
-.edit-cart:hover{
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+.edit-page:hover {
     transition: ease-in-out 0.2s;
     color: #ffffff;
     cursor: pointer;
@@ -115,6 +101,13 @@ h2{
 }
 
 .user-cart:hover {
+    transition: ease-in-out 0.2s;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.back-btn:hover {
     transition: ease-in-out 0.2s;
     color: #ffffff;
     cursor: pointer;

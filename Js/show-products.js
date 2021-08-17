@@ -1,8 +1,6 @@
 fetch("https://immense-mountain-59630.herokuapp.com/products-page/")
 .then((request) => {
-    // console.log(request.json())
     request.json().then((obj) => {
-        // console.log(obj.data)
         items = obj.data
         box = 1;
         item_no = 0;
@@ -13,7 +11,7 @@ fetch("https://immense-mountain-59630.herokuapp.com/products-page/")
             item_containers.innerHTML += `<div class="item">
                 <p>item: ${item[0]}</p>
                 <p>name: ${item[1]}</p>
-                <p>price-R: ${item[2]}</p>
+                <p>price: R${item[2]}</p>
                 <button class="add-btn">add to cart <i class="fas fa-cart-plus"></i></button>
                 </div>`;
         });
